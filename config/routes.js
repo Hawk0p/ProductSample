@@ -14,7 +14,10 @@ module.exports.routes = {
   'get /signup': {
     view: 'signup'
   },
-  'get /welcome': {
-    view: 'welcome'
-  }
+  'get /productEntry':{
+    view: 'productEntry'
+  },
+  'get /allproducts': 'ProductController.all',
+  'post /addproduct': 'ProductController.add'
+
 };

@@ -23,7 +23,7 @@ module.exports = {
                     message: info.message,
                     user: user
                 });*/
-								return res.redirect('welcome');
+								return res.view('welcome', {email: user.email});
             });
 
         })(req, res);

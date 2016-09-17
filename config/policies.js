@@ -4,6 +4,11 @@ module.exports.policies = {
 
   'PostController': {
     '*': 'isAuthenticated'
-  },
+  }
+  /*,
+
+  'ProductController': {
+    '*': 'isAuthenticated'
+  },*/
 
 };
